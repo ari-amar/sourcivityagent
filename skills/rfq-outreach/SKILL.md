@@ -37,6 +37,7 @@ When Ari selects suppliers to contact:
 4. DO NOT send until approved
 5. After sending, add a row to quotes/quote-tracker.csv with status "RFQ Sent"
 6. Create or update comms/[supplier-name].md with the sent email and date
+7. Run `python3 sync_to_sheets.py` to push the updated CSV to Google Sheets
 
 ## Rules
 

@@ -9,8 +9,9 @@ description: Track, compare, and manage supplier quotes. Use when Ari asks about
 
 1. Extract from the email: supplier name, quoted price, unit of measure, lead time, MOQ, payment terms, quote validity date
 2. Update quotes/quote-tracker.csv — find the matching row by supplier and part, update the fields and change status to "Quote Received"
-3. Update comms/[supplier-name].md with the quote details and date received
-4. Notify Ari via Telegram with a short summary: "[Supplier] quoted [price] per [unit], [lead time] lead time, MOQ [quantity]"
+3. Run `python3 sync_to_sheets.py` to push the updated CSV to Google Sheets
+4. Update comms/[supplier-name].md with the quote details and date received
+5. Notify Ari via Telegram with a short summary: "[Supplier] quoted [price] per [unit], [lead time] lead time, MOQ [quantity]"
 
 ### When Ari asks to compare quotes:
 
@@ -57,4 +58,5 @@ Status values: RFQ Sent, Quote Received, Follow-up Needed, Accepted, Declined, E
 
 - Never modify old rows — update them in place
 - Always keep the CSV headers intact
+- After ANY change to quote-tracker.csv, run `python3 sync_to_sheets.py` to sync to Google Sheets
 - If a quote seems unusually high or low compared to others, flag it for Ari
