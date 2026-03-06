@@ -1,0 +1,17 @@
+# Credentials and secrets
+credentials/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
