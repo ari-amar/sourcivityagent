@@ -24,10 +24,10 @@ EOF
 ```bash
 cat << 'EOF' | himalaya template send
 From: a76646325@gmail.com
-To: ari@sourcivity.io
+To: recipient@email.com
 Subject: Hi
 
-Hi Ari,
+Hello,
 
 Just reaching out to say hello.
 

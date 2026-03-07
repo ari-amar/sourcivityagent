@@ -24,22 +24,18 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google-gemma-3-27b-it",
+        "primary": "anthropic/claude-sonnet-4-6",
         "fallbacks": [
-          "google/gemini-2.5-flash-lite",
-          "google/gemini-3-flash-preview",
           "google/gemini-2.5-flash",
-          "google/gemini-robotics-er-1.5-preview",
-          "anthropic/claude-sonnet-4-6"
+          "google/gemini-3-flash-preview",
+          "google/gemini-2.5-flash-lite"
         ]
       },
       "models": {
-        "google-gemma-3-27b-it": {},
-        "google/gemini-2.5-flash-lite": {},
-        "google/gemini-3-flash-preview": {},
+        "anthropic/claude-sonnet-4-6": {},
         "google/gemini-2.5-flash": {},
-        "google/gemini-robotics-er-1.5-preview": {},
-        "anthropic/claude-sonnet-4-6": {}
+        "google/gemini-3-flash-preview": {},
+        "google/gemini-2.5-flash-lite": {}
       },
       "workspace": "/home/node/.openclaw/workspace",
       "compaction": {
